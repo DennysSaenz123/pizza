@@ -10,14 +10,59 @@
 <body>
     <main>
         <header>
+            <img src="images/pizza-guy.png" alt="Guy holding pizza">
             <h1>Welcome to Pappa's Pizaa!</h1>
             <h2>Serving GRC students for 50 years!</h2>
             <hr>
             <p>Come see us!</p>
+            <a id="contact-button" href="#" role="button">Contact Us</a>
         </header>
-    </main>
-    <form>
+         <form id="pizza-form" action="#" method="get">
+        <!--Contact info-->
+        <fieldset>
+            <legend>Contact Info</legend>
 
+            <label for="fname"> First Name: </label>
+            <input type="text" id="fname" name="fmane">
+            
+            <label for="lname"> Last Name: </label>
+            <input type="text" id="lname" name="lmane">
+            
+            <label for="email"> Email: </label>
+            <input type="text" id="email" name="eamil">
+
+        </fieldset>
+        <!--Pick up or Delivery-->
+        <fieldset>
+            <legend>Pick Up Or Delivery</legend>
+            <label for = "pickup">
+                <input type="radio" id="pickup" value="pickup" name="method">Pick up
+            </label>
+            <label for="dleivery">
+                <input type="radio" id="delivery" id="delivery" name="method">Delivery
+            </label>
+
+
+        </fieldset>
+        <!--Select Toppings field-->
+        <fieldset>
+            <legend>Select Toppings</legend>
+            <label><input type="checkbox">Pepperoni</label>
+            <label><input type="checkbox">Cheese</label>
+            <label><input type="checkbox">Hawaiann</label>
+            <label><input type="checkbox">Sausage</label>
+            <label><input type="checkbox">Chicken</label>
+            
+        </fieldset>
+        <!--Select Pizza size Field-->
+        <fieldset>
+            <legend>Pizza Size</legend>
+        </fieldset>
+
+        <!--Submit button-->
+        <button type="submit" id="order-button">Place Order</button>
     </form>
+    </main>
+   
 </body>
 </html>
