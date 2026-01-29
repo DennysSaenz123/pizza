@@ -41,7 +41,7 @@ legend{
     padding-left: 0 1rem;
 }
 fieldset{
-    border: 1.5px solid darkgreen;
+    border: 1.5px solid lightgreen;
     border-radius: .25rem;
     padding: 1rem;
     margin-bottom: 1.25rem;
@@ -49,4 +49,17 @@ fieldset{
 label{
     display: block;
     padding: .15rem;
+}
+
+input[type = "text"], textarea, select{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .75 rem;
+}
+
+.err {
+    color: darkred;
+    display: none;
 }
